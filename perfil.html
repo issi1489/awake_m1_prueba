@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil</title>
+    <link rel="shortcut icon" href="#" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+      >
+    <link rel="stylesheet" type="text/css" href="../webSalud/css/med_style.css">
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar (Paciente) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Medical Services App.</a>
+  
+        <!-- Navigation Bar Hamburger-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-expanded="false"
+          aria-controls="navigation" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End Navigation Bar Hamburger -->
+  
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navigation">
+           <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link scroll-trigger" 
+                  href="index.html#compromiso">
+                    Nuestro compromiso
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#noticias">
+                    Noticias
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#proveedores">
+                    Proveedores
+                </a>
+              </li>
+
+              <!--MENU PORTAL INTERNO-->
+              <li class="nav-item dropdown">
+                <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Perfil <span class="caret"></span>
+                </a>
+                
+                <div class="dropdown-menu dropdown-menu-right">
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="privada_paciente.html">
+                        Ficha Paciente
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="citas_medicas.html">
+                        Citas Médicas
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="historial_medico.html">
+                        Historial Médico
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="usuarios.html">
+                        Usuarios Autorizados
+                    </a>
+                    <!-- -->
+                    <a 
+                    class="dropdown-item scroll-trigger"
+                    href="perfil.html">
+                      Perfil
+                    </a>
+                    <!--LOGOUT-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll-trigger" href="index.html">
+                        Logout
+                    </a>
+                </div>
+              </li>
+          </ul>
+           
+        </div>
+        <!-- Navigation Links -->
+      </nav>
+    <!-- End Navigation Bar (Paciente)-->
+    
+    <br>
+    <br>
+    <!-- BODY PERFIL USUARIO -->
+    <div class="container">
+        <!-- BODY PRINCIPAL-->
+        <div class="row">
+            <!--MENÚ LATERAL-->
+                                            <!--DEBERIA MOSTRARSE SOLO SI ESTA EN NAVEGADOR PC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! JS?-->
+            <div class="col-sm-12 col-md-3">
+                <div class="btn-group-vertical btn-dark" role="group" aria-label="Basic example" style="opacity: 0.85;">
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="privada_paciente.html">Ficha Paciente</a><!--privada_paciente.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="citas_medicas.html">Citas Médicas</a><!--citas_medicas.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="historial_medico.html">Historial Médico</a><!--historial_medico.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="usuarios.html">Usuarios Autorizados</a><!--usuarios.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="#">Perfil</a><!--perfil.html--></button>
+                </div>
+            </div>
+            
+            <!--PERFIL-->
+            <div class="col-sm-12 col-md-9">
+                <!-- BENEFICIOS Y FORMULARIO-->
+                <div class="container">
+                    <div class="row">
+                        <!--IMAGEN PACIENTE-->
+                        <div class="card col-sm-12 col-md-4">
+                            <div class="card-header">
+                                MARGARITA GATICA                  
+                            </div>
+                            <div class="card-body">
+                                <img src="../webSalud/img/foto_perfil.jpg" class="img-fluid" alt="Responsive image" style="border-radius: 100%;">
+                            </div>
+                        </div>
+                        <!-- FIN IMAGEN PACIENTE-->
+
+                        <!-- INFO PERSONAL-->
+                        <div class="card col-sm-12 col-md-8">
+                            <div class="card-header">
+                                PACIENTE                
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <!--NOMBRE APELLIDO-->
+                                    <div class="row">
+                                        <div class="form-group col-sm-12 col-md-4">
+                                            <label>Rut</label>
+                                            <label type="text" class="form-control">11111111-1</label>
+                                        </div>
+                                        <div class="form-group col-sm-12 col-md-4">
+                                            <label>Nombre</label>
+                                            <label type="text" class="form-control">Margarita</label>
+                                        </div>
+                                        <div class="form-group col-sm-12 col-md-4">
+                                            <label>Apellido</label>
+                                            <label type="text" class="form-control">Gatica</label>
+                                        </div>
+                                    </div>
+    
+                                    <!-- DATOS NACIMIENTO Y DIRECCIÓN-->
+                                    <div class="row">
+                                        <!--Fecha de nacimiento-->
+                                        <div class="form-group col-sm-12 col-md-6">
+                                            <label>Fecha de Nacimiento</label>
+                                            <label type="text" class="form-control" >01/01/1971</label>
+                                        </div>
+                                        <!--Dirección-->
+                                        <div class="form-group col-sm-12 col-md-6">
+                                            <label>Dirección</label>
+                                            <label type="text" class="form-control" >Av. República 204,Santiago</label>
+                                        </div>
+                                    </div>
+     
+                                    <!--CONTACTO-->
+                                    <div class="row">
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label>Email</label>
+                                        <label type="text" class="form-control" id="formGroupExampleInput2">mgatica@gmail.com</label>
+                                    </div>
+                                    <div class="form-group col-sm-12 col-md-6">
+                                        <label>Fono</label>
+                                        <label type="text" class="form-control" id="formGroupExampleInput2">(+569)9999 9999</label>
+                                    </div>
+                                    </div>
+    
+                                    <!--FIN CONTACTO-->
+
+                                    <!--ACTUALIZACIÓN-->
+                                    <div class="row">
+                                        <div class="form-group col-sm-12 col-md-6">
+                                            <label>Cambio de contraseña o edición de información personal</label>
+                                        </div>
+                                        <div class="form-group col-sm-12 col-md-6">
+                                            <button type="button" class="btn btn-dark btn-lg">Editar </button>
+                                        </div>
+                                    </div>
+                                    <!--FIN ACTUALIZACIÓN-->
+                                    
+                                </form>
+                            </div>
+
+                            
+                        </div>
+                        <!-- FIN INFO PERSONAL-->
+
+                        
+                    </div>
+                    <!-- FIN ROW-->
+                </div>
+            </div>
+            <!-- END INFO PERSONAL-->
+        </div>
+    </div>
+
+    <!-- FIN BODY PERFIL USUARIO -->
+
+    </div>
+    <!-- SCRIPTS BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
+
