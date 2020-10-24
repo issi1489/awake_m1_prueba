@@ -77,153 +77,416 @@
     <br>
     <br>
 
-    <!-- BENEFICIOS Y FORMULARIO-->
+    <!--FORMULARIO PACIENTE MEDICO-->
+    <!--[Contenedor botones]-->
     <div class="container">
-        <div class="row">
-
-            <!-- BENEFICIOS-->
-            <div class="card col-sm-12 col-md-4">
-                <div class="card-header">
-                    BENEFICIOS                  
-                </div>
-                <div class="card-body">
-
-                    <div class="row">
-                        <div class="col-6" style="text-align: center;">
-                            <p class="card-text">Cuenta familiar</p>
-                            <img src="img/icono_familia.png" width="40%">
-                        </div>
-                        <div class="col-6" style="text-align: center;">
-                            <p class="card-text">Médicos tratántes</p>
-                            <img src="img/icono_medico.png" width="40%">
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <div class="col-6" style="text-align: center;">
-                            <p class="card-text">Resultado exámenes</p>
-                            <img src="img/icono_laboratorio.png" width="40%">
-                        </div>
-                        <div class="col-6" style="text-align: center;">
-                            <p class="card-text">Listado medicamentos</p>
-                            <img src="img/icono_medicamentos.png" width="40%">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6" style="text-align: center;">
-                            <p class="card-text">Historial atenciones</p>
-                            <img src="img/icono_paciente_medico.png" width="40%">
-                        </div>
-                        <div class="col-6" style="text-align: center;">
-                            <p class="card-text">Información Centralizada</p>
-                            <img src="img/icono_database.png" width="40%">
-                        </div>
-                    </div>
-                    
-                </div>
-                
-            </div>
-            <!-- FIN BENEFICIOS-->
-
-            <!-- FORMULARIO-->
-            <div class="col-sm-12 col-md-8">
-
-                <form>
-
-                    <!--NOMBRE APELLIDO-->
-                    <div class="row">
-                        <div class="form-group col-sm-12 col-md-4">
-                            <label for="formGroupExampleInput">Rut</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="11111111-1">
-                          </div>
-                        <div class="form-group col-sm-12 col-md-4">
-                            <label for="formGroupExampleInput">Nombre</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Margarita">
-                        </div>
-                        <div class="form-group col-sm-12 col-md-4">
-                            <label for="formGroupExampleInput2">Apellido</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Gatica">
-                        </div>
-                          
-                    </div>
-
-                    <!--PASSWORD-->
-                    <div class="row">
-                        <div class="form-group col-sm-12 col-md-6">
-                            <label for="formGroupExampleInput2">Password</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="**********">
-                          </div>
-                          <div class="form-group col-sm-12 col-md-6">
-                            <label for="formGroupExampleInput">Verifica Password</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="**********">
-                          </div>
-                    </div>
-
-                    <!-- DATOS NACIMIENTO Y DIRECCIÓN-->
-                    <div class="row">
-                        <!--Fecha de nacimiento-->
-                        <div class="form-group col-sm-12 col-md-4">
-                            <label for="formGroupExampleInput">Fecha de Nacimiento</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="01/01/1971">
-                        </div>
-                        <!-- Fono -->
-                        <div class="form-group col-sm-12 col-md-4">
-                          <label>Fono</label>
-                          <label type="text" class="form-control" id="formGroupExampleInput2">(+569)9999 9999</label>
-                        </div>
-                        <!--Dirección-->
-                        <div class="form-group col-sm-12 col-md-4">
-                            <label for="formGroupExampleInput">Dirección</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Av. República 204,Santiago">
-                        </div>
-                    </div>
-
-                    <!-- DATOS USUARIO (Paciente/Médico)-->
-                    <div class="row">
-                        <!--Tipo usuario-->
-                        <div class="form-group col-sm-12 col-md-6">
-                            <label for="formGroupExampleInput">Tipo de usuario</label>
-                            <div class="form-check-inline">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1" style="margin:5%;">Paciente  </label>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                <label class="form-check-label" for="exampleRadios2"style="margin:5%;"> Médico</label>
-                            </div>
-                        </div>
-
-                        <!--Foto-->
-                        <div class="form-group col-sm-12 col-md-6">
-                            <label for="choose-file" class="label-title">Foto de perfil</label>
-                            <input type="file" id="choose-file" size="80" />
-                        </div>
-                    </div>
-
-                    <!--EMAIL-->
-                    <div class="row">
-                      <div class="form-group col-sm-12 col-md-6">
-                        <label for="formGroupExampleInput">Email</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mgatica@gmail.com">
-                      </div>
-                      <div class="form-group col-sm-12 col-md-6">
-                        <label for="formGroupExampleInput2">Verifica Email</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="mgatica@gmail.com">
-                      </div>
-                    </div>
-
-                    <!-- BOTON REGISTRO-->
-                    <button type="button" class="btn btn-dark btn-lg" style="padding: 2px;"> REGISTRO </button>
-                </form>
-            </div>
-            <!-- FIN FORM-->
-
-            
+      <!--Botones-->
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          Para registrarte selecciona <span class="badge badge-dark">PACIENTE</span> o <span class="badge badge-dark">MÉDICO</span>
         </div>
-        <!-- FIN ROW-->
+        <div class="col-sm-12 col-md-6">
+          <p>
+            <button class="btn btn-dark collapsed" data-toggle="collapse" href="#crearPaciente" aria-expanded="false" aria-controls="collapseExample">
+                PACIENTE
+            </button>
+            <a class="btn btn-dark collapsed" data-toggle="collapse" href="#crearMedico" aria-expanded="false" aria-controls="collapseExample">
+                MÉDICO
+            </a>
+        </p>
+        </div>
+      </div>
     </div>
-    <!-- FIN BENEFICIOS Y FORMULARIO-->
+    <!--[Fin Contenedor botones]-->
 
-   
+    <!--[Contenedor Registro]-->
+    <div class="container">
+      <!--[Registro Cliente]-->
+      <div class="collapse" id="crearPaciente">
+        <form id="form_regpaciente">
+          <!--Cards [Datos personales-antecedentes médicos]-->
+          <div class="row">
+
+            <!--[Datos personales]-->
+            <div class="card col-sm-12 col-md-6">
+              <div class="card-header">DATOS PERSONALES</div>
+              <!--NOMBRE APELLIDO-->
+              <div class="row">
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Rut</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="11111111-1">
+                      </div>
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Nombre</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Margarita">
+                    </div>
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput2">Apellido</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Gatica">
+                    </div>
+                      
+              </div>
+
+                <!--PASSWORD-->
+              <div class="row">
+                    <div class="form-group col-sm-12 col-md-6">
+                        <label for="formGroupExampleInput2">Password</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="**********">
+                      </div>
+                      <div class="form-group col-sm-12 col-md-6">
+                        <label for="formGroupExampleInput">Verifica Password</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="**********">
+                      </div>
+              </div>
+
+                <!-- DATOS NACIMIENTO Y DIRECCIÓN-->
+              <div class="row">
+                    <!--Fecha de nacimiento-->
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="01/01/1971">
+                    </div>
+                    <!-- Fono -->
+                    <div class="form-group col-sm-12 col-md-4">
+                      <label>Fono</label>
+                      <label type="text" class="form-control" id="formGroupExampleInput2">(+569)9999 9999</label>
+                    </div>
+                    <!--Dirección-->
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Dirección</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Av. República 204,Santiago">
+                    </div>
+              </div>
+
+              <!-- DATOS USUARIO (Paciente)-->
+              <div class="row">
+                    
+                    <!--Foto-->
+                    <div class="form-group col-sm-12 col-md-12">
+                        <label for="choose-file" class="label-title">Foto de perfil</label>
+                        <input type="file" id="choose-file" size="80" />
+                    </div>
+              </div>
+
+              <!--EMAIL-->
+              <div class="row">
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="formGroupExampleInput">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mgatica@gmail.com">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="formGroupExampleInput2">Verifica Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="mgatica@gmail.com">
+                  </div>
+              </div>
+            </div>
+            <!--[FIN Datos personales]-->
+
+            <!--[Antecedentes Médicos]-->
+            <div class="card col-sm-12 col-md-6">
+              <div class="card-header">ANTECEDENTES MÉDICOS</div>
+              
+              <!--grupo sanguineo-->
+              <div class="row">
+                <p style="padding-left: 3%;">Grupo Sanguineo</p>
+                <div class="form-group col-sm-12 col-md-6">
+                  
+                  <select id="especialidad">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O">O</option>
+                  </select>
+                  <select id="especialidad">
+                    <option value="Positivo">+</option>
+                    <option value="Negativo">-</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-12 col-md-6">
+                  
+                </div>
+              </div>
+              
+              <!--enf declaradas-->
+              <div class="row">
+                <div class="col-sm-12 col-md-12 ">
+                  <p>Enfermedades Declaradas</p>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Diabetes;Depresion;Discopatia">
+                </div>
+              </div>
+
+              <!--Medicamentos-->
+              <div class="row">
+                <div class="col-sm-12 col-md-12 ">
+                  <p>Medicamentos</p>
+                  <input type="text" class="form-control" placeholder="Metformina;Aspirina;Lamotrigina">
+                </div>
+              </div>
+
+              <!--Alergias-->
+              <div class="row">
+                <div class="col-sm-12 col-md-12 ">
+                  <p>Alergias Diagnosticadas</p>
+                  <input type="text" class="form-control" placeholder="Penicilina;Berryes;">
+                </div>
+              </div>
+
+              <!--Previsión de Salud-->
+              <div class="row">
+                <div class="col-sm-12 col-md-12 ">
+                  <p>Previsión de Salud</p>
+                  <input type="text" class="form-control" placeholder="FONASA;Seguro complementario de Salud">
+                </div>
+              </div>
+
+              <!--Institución Recurrente-->
+              <div class="row">
+                <div class="col-sm-12 col-md-12 ">
+                  <p>Institución Recurrente</p>
+                  <input type="text" class="form-control" placeholder="Hospital Felix Bulnes; Clinica Santa Maria">
+                </div>
+              </div>
+            </div>
+            <!--[FIN Antecedentes Médicos]-->
+          </div>
+          <!--FIN Cards [Datos personales-antecedentes médicos]-->
+
+          <!--Botón registro-->
+          <div class="row">
+            <button type="button" class="btn btn-dark btn-lg" style="padding: 2px;"> REGISTRO </button>
+          </div>
+          <!--FIN Botón registro-->
+        </form>
+      </div>
+      <!--[FIN Registro Cliente]-->
+
+      <!--[Registro Médico]-->
+      <div class="collapse" id="crearMedico">
+        <form id="form_regpaciente">
+          <!--Cards [Datos personales]-->
+          <div class="row">
+
+            <!--[Datos personales]-->
+            <div class="card col-sm-12 col-md-6">
+              <div class="card-header">DATOS PERSONALES</div>
+              <!--NOMBRE APELLIDO-->
+              <div class="row">
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Rut</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="11111111-1">
+                      </div>
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Nombre</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Margarita">
+                    </div>
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput2">Apellido</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Gatica">
+                    </div>
+                      
+              </div>
+
+                <!--PASSWORD-->
+              <div class="row">
+                    <div class="form-group col-sm-12 col-md-6">
+                        <label for="formGroupExampleInput2">Password</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="**********">
+                      </div>
+                      <div class="form-group col-sm-12 col-md-6">
+                        <label for="formGroupExampleInput">Verifica Password</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="**********">
+                      </div>
+              </div>
+
+                <!-- DATOS NACIMIENTO Y DIRECCIÓN-->
+              <div class="row">
+                    <!--Fecha de nacimiento-->
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="01/01/1971">
+                    </div>
+                    <!-- Fono -->
+                    <div class="form-group col-sm-12 col-md-4">
+                      <label>Fono</label>
+                      <label type="text" class="form-control" id="formGroupExampleInput2">(+569)9999 9999</label>
+                    </div>
+                    <!--Dirección-->
+                    <div class="form-group col-sm-12 col-md-4">
+                        <label for="formGroupExampleInput">Dirección</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Av. República 204,Santiago">
+                    </div>
+              </div>
+
+              <!-- DATOS USUARIO (Médico)-->
+              <div class="row">
+                
+                <!--Foto-->
+                <div class="form-group col-sm-12 col-md-12">
+                  <label for="choose-file" class="label-title">Foto de perfil</label>
+                  <input type="file" id="choose-file" size="80" />
+                </div>
+              </div>
+
+              <!--EMAIL-->
+              <div class="row">
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="formGroupExampleInput">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="mgatica@gmail.com">
+                  </div>
+                  <div class="form-group col-sm-12 col-md-6">
+                    <label for="formGroupExampleInput2">Verifica Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="mgatica@gmail.com">
+                  </div>
+              </div>
+            </div>
+            <!--[FIN Datos personales]-->
+
+            <!--[Antecedentes Médicos]-->
+            <div class="card col-sm-12 col-md-6">
+              <div class="form-group col-sm-12 col-md-12">
+                <div class="card-header">ANTECEDENTES PROFESIONALES</div>
+
+                <!--Especialidad+Experto-->
+                <div class="row">
+                  <!--Especialidad-->
+                  <div class="form-group col-sm-12 col-md-12">
+                    <label>Especialidad</label>
+                    <select id="especialidad" >
+                      <option value="Padre">Medico General</option>
+                      <option value="Nieto(a)">Geriatra</option>
+                      <option value="Nieto(a)">Cardiologo</option>
+                      <option value="Hijo(a)">Oncólogo</option>
+                      <option value="Madre">Neurologo</option>
+                      <option value="Madre">Inmunólogo</option>
+                      <option value="Hermano(a)">Otorrinolaringologoo</option>
+                      <option value="Madre">Endocrinologo</option>
+                      <option value="Conyuge">Dermatologo</option>
+                      <option value="Conyuge">Gineco-obstetra</option>
+                      <option value="Hermano(a)">Urologo</option>
+                      <option value="Hijo(a)">Oftalmologo</option>
+                      <option value="Hijo(a)">Dentista</option>
+                      <option value="Hijo(a)">Traumatólogo</option>
+                      <option value="Hijo(a)">Sicólogo</option>
+                      <option value="Hijo(a)">Siquiatra</option>
+                      <option value="Hijo(a)">Otro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!--Experto en-->
+                <div class="row">
+                  <div class="form-group col-sm-12 col-md-12">
+                    <label>Experto en:</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Embarazo alto riesgo;Diabetes gestacional">
+                  </div>
+                </div>
+
+                <!--Regiones de atención-->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 ">
+                    <label>Región de atención</label>
+                    <select id="especialidad">
+                        <option value="RM">Región Metropolitana</option>
+                        <option value="1_R">I Región de Tarapacá</option>
+                        <option value="2_R">II Región de Antofagasta</option>
+                        <option value="3_R">III Región de Atacama</option>
+                        <option value="4_R">IV Región de Coquimbo</option>
+                        <option value="5_R">V Región de Valparaíso</option>
+                        <option value="6_R">VI Región del L.Gral Bdo O’Higgins</option>
+                        <option value="7_R">VII Región del Maule</option>
+                        <option value="8_R">VIII Región del Biobío</option>
+                        <option value="9_R">IX Región de La Araucanía</option>
+                        <option value="10_R">X Región de Los Lagos</option>
+                        <option value="11_R">XI Región Aysén</option>
+                        <option value="12_R">XII Región de Magallanes</option>
+                        <option value="14_R">XIV Región de Los Ríos</option>
+                        <option value="15_R">XV Región de Arica y Parinacota</option>
+                        <option value="16_R">XVI Región de Ñuble</option>
+                    </select>                    
+                  </div>
+                </div>
+
+                <!--Coberturas de Atención-->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 ">
+                    <p>Coberturas de Atención</p>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">FONASA</label>
+                      </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1">ISAPRE</label>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <!--Instituciones de atención-->
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 ">
+                    <p>Instituciones de atención</p>
+                    <input type="text" class="form-control" placeholder="Hospital Clínico UC; Consulta Privada">
+                  </div>
+                </div>
+
+            </div>
+            <!--[FIN Antecedentes Profesionales]-->
+          </div>
+          <!--FIN Cards [Datos personales-antecedentes médicos]-->
+
+          <!--Botón registro-->
+          <div class="row">
+            <button type="button" class="btn btn-dark btn-lg" style="padding: 2px;"> REGISTRO </button>
+          </div>
+          <!--FIN Botón registro-->
+        </form>
+      </div>
+      <!--[FIN Registro Médico]-->
+
+    </div>
+    <!--[FIN Contenedor Registro]-->
+
+    <!--[Contenedor beneficios]-->
+    <div class="container">  
+      <div class="row">
+        <div class="col-sm-6 col-md-2" style="text-align: center;">
+          <p class="card-text">Cuenta familiar</p>
+          <img src="img/icono_familia.png" width="40%">
+        </div>
+
+        <div class="col-sm-6 col-md-2" style="text-align: center;">
+            <p class="card-text">Médicos tratántes</p>
+            <img src="img/icono_medico.png" width="40%">
+        </div>
+        
+        <div class="col-sm-6 col-md-2" style="text-align: center;">
+          <p class="card-text">Resultado exámenes</p>
+          <img src="img/icono_laboratorio.png" width="40%">
+        </div>
+
+        <div class="col-sm-6 col-md-2" style="text-align: center;">
+            <p class="card-text">Listado medicamentos</p>
+            <img src="img/icono_medicamentos.png" width="40%">
+        </div>
+
+        <div class="col-sm-6 col-md-2" style="text-align: center;">
+          <p class="card-text">Historial atenciones</p>
+          <img src="img/icono_paciente_medico.png" width="40%">
+        </div>
+
+        <div class="col-sm-6 col-md-2" style="text-align: center;">
+            <p class="card-text">Data Centralizada</p>
+            <img src="img/icono_database.png" width="40%">
+        </div>
+      </div>
+    </div>
+    <!--[Fin Contenedor beneficios]-->
+    
+
+
+
+     
     <!-- Fin Body -->
    
     <br>
@@ -235,7 +498,7 @@
 
 
     <!--archivo scripts-->
-    <script src="../webSalud/js/med_js.js" charset="utf-8"></script>
+    <script src="js/med_js.js" charset="utf-8"></script>
 
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <script 
