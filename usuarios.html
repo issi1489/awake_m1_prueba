@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Usuarios Autorizados</title>
+      <link rel="shortcut icon" href="#" />
+
+      <!-- BOOTSTRAP -->
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+      >
+      <link rel="stylesheet" type="text/css" href="css/med_style.css">
+  </head>
+
+  <body>
+
+    <!-- Navigation Bar (Paciente) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Medical Services App.</a>
+  
+        <!-- Navigation Bar Hamburger-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-expanded="false"
+          aria-controls="navigation" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End Navigation Bar Hamburger -->
+  
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navigation">
+           <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link scroll-trigger" 
+                  href="index.html#compromiso">
+                    Nuestro compromiso
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#noticias">
+                    Noticias
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#proveedores">
+                    Proveedores
+                </a>
+              </li>
+
+              <!--MENU PORTAL INTERNO-->
+              <li class="nav-item dropdown">
+                <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Perfil <span class="caret"></span>
+                </a>
+                
+                <div class="dropdown-menu dropdown-menu-right">
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="privada_paciente.html">
+                        Ficha Paciente
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="citas_medicas.html">
+                        Citas Médicas
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="historial_medico.html">
+                        Historial Médico
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="usuarios.html">
+                        Usuarios Autorizados
+                    </a>
+                    <!-- -->
+                    <a 
+                    class="dropdown-item scroll-trigger"
+                    href="perfil.html">
+                      Perfil
+                    </a>
+                    <!--LOGOUT-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll-trigger" href="index.html">
+                        Logout
+                    </a>
+                </div>
+              </li>
+          </ul>
+           
+        </div>
+        <!-- Navigation Links -->
+      </nav>
+    <!-- End Navigation Bar (Paciente)-->
+    
+    <br>
+    <br>
+    <!-- BODY Usuarios Autorizados -->
+    <div class="container">
+        <!-- BODY PRINCIPAL-->
+        <div class="row">
+            <!--MENÚ LATERAL-->
+                                            <!--DEBERIA MOSTRARSE SOLO SI ESTA EN NAVEGADOR PC!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! JS?-->
+            <div class="col-sm-12 col-md-3">
+                <div class="btn-group-vertical btn-dark" role="group" aria-label="Basic example" style="opacity: 0.85;">
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="privada_paciente.html">Ficha Paciente</a><!--privada_paciente.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="citas_medicas.html">Citas Médicas</a><!--citas_medicas.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="historial_medico.html">Historial Médico</a><!--historial_medico.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="usuarios.html">Usuarios Autorizados</a><!--usuarios.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="perfil.html">Perfil</a><!--perfil.html--></button>
+                </div>
+            </div>
+            <!--FIN LATERAL-->
+
+            <!--  [Usuarios autorizados]  -->
+            <div class="card col-sm-12 col-md-9">
+                <div class="container">
+                    <!-- Mensajes importantes -->
+                    <div class="row">
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Atención!</strong> Manteniendo tu información actualizada, nos ayudas a brindarte una atención oportuna.
+                        </div>
+                    </div>
+
+                    <!--imagen-->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3">
+                            <img src="img/foto_perfil.jpg" class="img-fluid" alt="Responsive image" style="border-radius: 100%; width: 100%;">
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <p style="font-size: xx-large; padding: 9%;">Usuarios Autorizados </p>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <!-- Formularios nuevos usuarios-->
+                    <div class="row">
+                        <!--Botones-->
+                        <p>
+                            <a class="btn btn-primary collapsed" data-toggle="collapse" href="#usuarios_familiares" aria-expanded="false" aria-controls="collapseExample">
+                                Autorizar Familiar
+                            </a>
+                            <a class="btn btn-primary collapsed" data-toggle="collapse" href="#usuarios_medicos" aria-expanded="false" aria-controls="collapseExample">
+                                Autorizar Médico
+                            </a>
+                        </p>
+                        <!-- Desplegables Asociados-->
+                        <div class="col-sm-12 col-md-12">
+                            <!--USUARIOS FAMILIARES-->
+                            <div class="collapse" id="usuarios_familiares">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <p>DATOS FAMILIAR</p>
+                                    </div>
+                                    <form>
+                                        <!--NOMBRE APELLIDO-->
+                                        <div class="row">
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <label for="formGroupExampleInput">Rut</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="22222222-2">
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <label for="formGroupExampleInput">Nombre</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan">
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <label for="formGroupExampleInput2">Apellido</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Pardo">
+                                            </div>
+                                            
+                                        </div>
+
+                                        <!-- DATOS CONTACTO-->
+                                        <div class="row">
+                                            <!-- Fono -->
+                                            <div class="form-group col-sm-12 col-md-6">
+                                            <label>Fono</label>
+                                            <label type="text" class="form-control" id="formGroupExampleInput2">(+569)9999 9999</label>
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label for="formGroupExampleInput">Email</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="juanpardo@gmail.com">
+                                            </div>
+                                        </div>
+
+                                        <!-- RELACION CON PACIENTE-->
+                                        <div class="row">
+                                            <!--Tipo usuario-->
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label>Relacion con paciente</label>
+                                                <select id="relacion">
+                                                    <option value="Padre">Padre</option>
+                                                    <option value="Madre">Madre</option>
+                                                    <option value="Conyuge">Conyuge</option>
+                                                    <option value="Hermano(a)">Hermano(a)</option>
+                                                    <option value="Hijo(a)">Hijo(a)</option>
+                                                    <option value="Nieto(a)">Madre</option>
+                                                </select>
+                                            </div>
+                    
+                                            <!--Contacto de emergencia-->
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switchSOS1">
+                                                    <label class="custom-control-label" for="switchSOS1">Contacto de emergencia</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--PASSWORD-->
+                                        <div class="row">
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label for="formGroupExampleInput2">Password</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="**********">
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label for="formGroupExampleInput">Verifica Password</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="**********">
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- BOTON REGISTRO-->
+                                        <button type="button" class="btn btn-dark btn-lg" style="padding: 2px;"> REGISTRO </button>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <!--FIN USUARIOS FAMILIARES-->    
+                            
+                            <!--USUARIOS MEDICOS-->
+                            <div class="collapse" id="usuarios_medicos">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <p>DATOS MÉDICO</p>
+                                    </div>
+                                    <form>
+                                        <!--NOMBRE APELLIDO-->
+                                        <div class="row">
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <label for="formGroupExampleInput">Rut</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="3333333-3">
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <label for="formGroupExampleInput">Nombre</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Elizabeth">
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <label for="formGroupExampleInput2">Apellido</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Jara">
+                                            </div>
+                                            
+                                        </div>
+
+                                        <!-- DATOS CONTACTO-->
+                                        <div class="row">
+                                            <!-- Fono -->
+                                            <div class="form-group col-sm-12 col-md-6">
+                                            <label>Fono</label>
+                                            <label type="text" class="form-control" id="formGroupExampleInput2">(+569)9999 9999</label>
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label for="formGroupExampleInput">Email</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="dra.elizabeth@gmail.com">
+                                            </div>
+                                        </div>
+
+                                        <!-- RELACION CON PACIENTE-->
+                                        <div class="row">
+                                            <!--Tipo usuario-->
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <label>Especialidad</label>
+                                                <select id="especialidad">
+                                                    <option value="Padre">Medico General</option>
+                                                    <option value="Nieto(a)">Geriatra</option>
+                                                    <option value="Nieto(a)">Cardiologo</option>
+                                                    <option value="Hijo(a)">Oncólogo</option>
+                                                    <option value="Madre">Neurologo</option>
+                                                    <option value="Madre">Inmunólogo</option>
+                                                    <option value="Hermano(a)">Otorrinolaringologoo</option>
+                                                    <option value="Madre">Endocrinologo</option>
+                                                    <option value="Conyuge">Dermatologo</option>
+                                                    <option value="Conyuge">Gineco-obstetra</option>
+                                                    <option value="Hermano(a)">Urologo</option>
+                                                    <option value="Hijo(a)">Oftalmologo</option>
+                                                    <option value="Hijo(a)">Dentista</option>
+                                                    <option value="Hijo(a)">Traumatólogo</option>
+                                                    <option value="Hijo(a)">Sicólogo</option>
+                                                    <option value="Hijo(a)">Siquiatra</option>
+                                                    <option value="Hijo(a)">Otro</option>
+                                                </select>
+                                            </div>
+                    
+                                            <!--Contacto de emergencia-->
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switchSOS2">
+                                                    <label class="custom-control-label" for="switchSOS2">Contacto SOS</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-4">
+                                                <div class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" id="switchCabecera">
+                                                    <label class="custom-control-label" for="switchCabecera">Cabecera</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--PASSWORD-->
+                                        <div class="row">
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label for="formGroupExampleInput2">Password</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="**********">
+                                            </div>
+                                            <div class="form-group col-sm-12 col-md-6">
+                                                <label for="formGroupExampleInput">Verifica Password</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="**********">
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- BOTON REGISTRO-->
+                                        <button type="button" class="btn btn-dark btn-lg" style="padding: 2px;"> REGISTRO </button>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <!--FIN USUARIOS MEDICOS-->    
+                            
+                        </div>
+                    </div>
+                    <!-- FIN Formularios nuevos usuarios-->
+
+                    <!-- USUARIOS AUTORIZADOS-->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Carlos Espejo</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">Conyuge</h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">+5682515469</h6>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="switchcard1" checked>
+                                        <label class="custom-control-label" for="switchcard1">Contacto SOS</label>
+                                    </div>
+
+                                    <button type="button" class="btn btn-info">Más...</button>
+                                    <button type="button" class="btn btn-warning">Eliminar</button>                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pamela Cortés</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">Geriatra</h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">+5684567469</h6>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="switchcard2.1" >
+                                        <label class="custom-control-label" for="switchcard2.1">Contacto SOS</label>
+                                    </div>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="switchcard2.2" checked>
+                                        <label class="custom-control-label" for="switchcard2.2">Cabecera</label>
+                                    </div>
+                                     
+                                    <button type="button" class="btn btn-info">Más...</button>
+                                    <button type="button" class="btn btn-warning">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-12 col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Carolina Espejo</h4>
+                                    <h6 class="card-subtitle mb-2 text-muted">Hija</h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">+5677895469</h6>
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="switchcard3" >
+                                        <label class="custom-control-label" for="switchcard3">Contacto SOS</label>
+                                    </div>
+
+                                    <button type="button" class="btn btn-info">Más...</button>
+                                    <button type="button" class="btn btn-warning">Eliminar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <br>
+                    <!-- FIN ROW-->
+                </div>
+            </div>
+            <!-- END INFO PERSONAL-->
+        </div>
+    </div>
+
+    <!-- FIN BODY PERFIL USUARIO -->
+
+    </div>
+    <!-- SCRIPTS BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
+
+<!--chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
