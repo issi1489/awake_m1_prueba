@@ -13,7 +13,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
       >
-      <link rel="stylesheet" type="text/css" href="../webSalud/css/med_style.css">
+      <link rel="stylesheet" type="text/css" href="css/med_style.css">
   </head>
 
   <body>
@@ -137,10 +137,16 @@
             <!--FIN LATERAL-->
 
             <!--  [CITAS MÉDICAS]  -->
-            <div class="col-sm-12 col-md-9">
+            <div class="card col-sm-12 col-md-9">
             
                 <div class="container">
                     <div class="row">
+                        <div class="card-header col-sm-12 col-md-12">
+                            CALENDARIO DE EXÁMENES MÉDICOS Y CITAS PROGRAMADAS                  
+                        </div>
+                    </div><br>
+                    <div class="row">
+                        <!--CALENDARIO-->
                         <table>
                             <tr>
                               <th class="day-name">DOMINGO</th>
@@ -154,28 +160,29 @@
                             <tr>
                               <td class="day"><span class="number">30</span></td>
                               <td class="day"><span class="number">1</span>
-                                <span class="event"></span>
-                                <span class="event"></span></td>
+                                <p class="event" style="background-color:red; font-size: small;">Ex. glucosa 8:15</p>
+                                <p class="event" style="background-color:blue; font-size: small;">Med. Gral 14:30</p></td>
                               <td class="day"><span class="number">2</span></td>
-                              <td class="day"><span class="number">3</span><span class="event event-multiday-start" placeholder="dfsdfsdf"></span></td>
-                              <td class="day"><span class="number">4</span><span class="event event-multiday"></span><span class="event event-multiday-start eventclass" style="background-color:#5a9ab2;"></span><span class="event"></td>
-                              <td class="day"><span class="number">5</span><span class="event event-multiday-finish"></span><span class="event event-multiday eventclass" style="background-color:#5a9ab2;"></span></td>
-                              <td class="day"><span class="number">6</span><span class="event event-ghost"></span><span class="event event-multiday-finish eventclass" style="background-color:#5a9ab2;"></span></td>
+                              <td class="day"><span class="number">3</span></td>
+                              <td class="day"><span class="number">4</span></td>
+                              <td class="day"><span class="number">5</span></td>
+                              <td class="day"><span class="number">6</span></td>
                             </tr>
                             <tr>
                               <td class="day"><span class="number">7</span></td>
-                              <td class="day"><span class="number">8</span><span class="event"></span></td>
+                              <td class="day"><span class="number">8</span></span></td>
                               <td class="day"><span class="number">9</span></td>
                               <td class="day"><span class="number">10</span></td>
-                              <td class="day"><span class="number">11</span></td>
+                              <td class="day"><span class="number">11</span>
+                                <p class="event" style="background-color:red; font-size: small;">Ex Perfil lipídico 7:45<p></td>
                               <td class="day"><span class="number">12</span></td>
                               <td class="day"><span class="number">13</span></td>
                             </tr>
                             <tr>
                               <td class="day"><span class="number">14</span></td>
                               <td class="day"><span class="number">15</span></td>
-                              <td class="day"><span class="number">16</span><span class="event"></span></td>
-                              <td class="day"><span class="number">17</span><span class="event"></span></td>
+                              <td class="day"><span class="number">16</span></td>
+                              <td class="day"><span class="number">17</span></td>
                               <td class="day"><span class="number">18</span></td>
                               <td class="day"><span class="number">19</span></td>
                               <td class="day"><span class="number">20</span></td>
@@ -183,15 +190,16 @@
                             <tr>
                               <td class="day"><span class="number">21</span></td>
                               <td class="day"><span class="number">22</span></td>
-                              <td class="day"><span class="number">23</span></td>
-                              <td class="day"><span class="number">24</span></td>
+                              <td class="day today"><span class="number">23</span></td>
+                              <td class="day"><span class="number">24</span>
+                                <p class="event" style="background-color:blue; font-size: small;">Endocrinologo 17:30</p></td>
                               <td class="day"><span class="number">25</span></td>
                               <td class="day"><span class="number">26</span></td>
-                              <td class="day"><span class="number">27</span><span class="event event-multiday-start" style="background-color:#da5f5f;"></td>
+                              <td class="day"><span class="number">27</span></td>
                             </tr>
                             <tr>
-                              <td class="day"><span class="number">28</span><span class="event event-multiday" style="background-color:#da5f5f;"></td>
-                              <td class="day today"><span class="number">29</span><span class="event event-multiday-finish" style="background-color:#da5f5f;"></td>
+                              <td class="day"><span class="number">28</span></td>
+                              <td class="day"><span class="number">29</span></td>
                               <td class="day"><span class="number">30</span></td>
                               <td class="day"><span class="number">1</span></td>
                               <td class="day"><span class="number">2</span></td>
@@ -200,18 +208,14 @@
                             </tr>
                             <tr>
                               <td class="day"><span class="number">5</span></td>
-                              <td class="day"><span class="number">6</span><span class="event"></span></td>
+                              <td class="day"><span class="number">6</span>
                               <td class="day"><span class="number">7</span></td>
                               <td class="day"><span class="number">8</span></td>
                               <td class="day"><span class="number">9</span></td>
                               <td class="day"><span class="number">10</span></td>
                               <td class="day"><span class="number">11</span></td>
                             </tr>
-                          </table>
-                          
-                          
-                          
-                          
+                        </table>
                     </div>
                     <!-- FIN ROW-->
                 </div>
