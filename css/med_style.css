@@ -12,6 +12,14 @@ Full Stack Python 2020
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');/*Bold italic */
 /*END FUENTES*/
 
+.body_med{
+    background-color: rgb(36, 34, 34);
+}
+
+#PerfilMedico{
+    opacity: 0.7;
+}
+
 #competencias, 
 #contacto {
     padding-top: 60px;
@@ -109,5 +117,8 @@ span.event-multiday { margin: 5px -2px; border-radius: 0; }
 span.event-multiday-start { margin-right: -4px;  }
 span.event-multiday-finish { margin-left: -4px;  }
 
-span.event-ghost { background-color:transparent; }
+  
+  span.event-ghost { background-color:transparent; }
 /* FIN CALENDARIO*/
+
+

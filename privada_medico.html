@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Perfil Médico</title>
+      <link rel="shortcut icon" href="#" />
+
+      <!-- BOOTSTRAP -->
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+      >
+      <link rel="stylesheet" type="text/css" href="css/med_style.css">
+  </head>
+
+  <body class="body_med">
+
+    <!-- Navigation Bar (Médico) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Medical Services App.</a>
+  
+        <!-- Navigation Bar Hamburger-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-expanded="false"
+          aria-controls="navigation" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End Navigation Bar Hamburger -->
+  
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navigation">
+           <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link scroll-trigger" 
+                  href="index.html#compromiso">
+                    Nuestro compromiso
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#noticias">
+                    Noticias
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#proveedores">
+                    Proveedores
+                </a>
+              </li>
+
+              <!--MENU PORTAL INTERNO-->
+              <li class="nav-item dropdown">
+                <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Perfil <span class="caret"></span>
+                </a>
+                
+                <div class="dropdown-menu dropdown-menu-right">
+                    <!--Perfil Medico -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="#PerfilMedico">
+                        Mi Perfil
+                    </a>
+                    <!--Mis Pacientes-->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="#MisPacientes">
+                      Mis Pacientes
+                    </a>
+                    <!--Agenda -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="#Agenda">
+                      Agenda
+                    </a>
+                    
+                    <!--LOGOUT-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll-trigger" href="index.html">
+                        Logout
+                    </a>
+                </div>
+              </li>
+          </ul>
+           
+        </div>
+        <!-- Navigation Links -->
+      </nav>
+    <!-- End Navigation Bar (Médico)-->
+    
+    <br>
+    <br><br>
+    <!-- [BODY PERFIL USUARIO] -->
+  
+    <!-- [Container Mi Perfil] -->
+    <div class="card container"id="PerfilMedico">
+        <div class="row">
+            <!--Foto-->
+            <div class="col-sm-12 col-md-3">
+                <div class="card-header">
+                    Elizabeth Orellana                
+                </div>
+                <div class="card-body">
+                    <img src="img/foto_perfil_medico.jpg" class="img-fluid" alt="Responsive image" style="border-radius: 100%;">
+                </div>
+            </div>
+
+            <!--Datos Profesionales-->
+            <div class="col-sm-12 col-md-5">
+                <!--Especialidad+Experto-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Especialidad]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">Gineco-obstetra</div>
+                    </div>
+                </div>
+                <!--Experto en-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Experto en]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">Embarazos de alto riesgo</div>
+                    </div>
+                </div>
+                <!--Regiones de atención-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Región de atención]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">Región Metropolitana</div>
+                    </div>
+                </div>
+                <!--Coberturas de Atención-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Coberturas de Atención]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">FONASA - ISAPRE</div>
+                    </div>
+                </div>
+                <!--Instituciones de atención-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Instituciones de Atención]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">
+                            <li>Clínica Santa María</LI>
+                            <li>H. Luis Calvo Mackenna</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Datos Personales-->
+            <div class="col-sm-12 col-md-4">
+                <!--Rut-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Rut]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">
+                            15.090.111-3
+                        </div>
+                    </div>
+                </div>
+                <!--Fecha de nacimiento-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Fecha de nacimiento]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">
+                            04 Diciembre 1983
+                        </div>
+                    </div>
+                </div>
+                <!--Fono-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Fono]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">
+                            (+569)9999 9999
+                        </div>
+                    </div>
+                </div>
+                <!--EMAIL-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Email]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">
+                            dra.eorellana@gmail.com
+                        </div>
+                    </div>
+                </div>
+                <!--Dirección-->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-header">[Dirección]</div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card-body">
+                            Av.N.Providencia 2305,Prov.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [FIN Container Mi Perfil] -->
+
+    <!-- [Container Mis Pacientes] -->
+    <div class="card container" id="MisPacientes">
+        <div class="row">
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">Josefina Alvarado</div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Embarazo Alto Riesgo</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">+5656734469</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">40 años</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">16 sem.</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Placenta previa. Reposo. Licencia médica</h6>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="switchcard1" checked>
+                        <label class="custom-control-label" for="switchcard1">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">Antonia Carvajal</div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Aborto espontaneo</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">+5655664469</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">25 años</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">5 sem.</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Antibioticos y Reposo. Se aconseja sicologo</h6>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="switchcard2">
+                        <label class="custom-control-label" for="switchcard2">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">Camilo Farias</div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Control sano</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Padre: Antonio Farias</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">+565674889</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">9 meses</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Crecimiento de acuerdo a su edad</h6>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="switchcard3">
+                        <label class="custom-control-label" for="switchcard3">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">Alejandra Riquelme</div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Resfrío viral</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Padre: Miguel Riquelme</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">+569687889</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">5 años</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Reposo y tratamiento paliativo</h6>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="switchcard4">
+                        <label class="custom-control-label" for="switchcard4">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">Emilia Parra</div>
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted">Embarazo</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">+5682515469</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">20 sem.</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Crecimiento adecuado.</h6>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="switchcard5" >
+                        <label class="custom-control-label" for="switchcard5">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">José Ángel Torres</div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Control Sano</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Madre: Daniela Bravo</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">+569633339</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">2 semanas</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Prematuro. Sin reflejo de succión</h6>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="switchcard6" checked>
+                            <label class="custom-control-label" for="switchcard6">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">Isadora Vomberg</div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Varicela</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Padre: Ricardo Vomberg</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">+569635677</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">7 años</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Analgésico. Reposo </h6>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="switchcard7">
+                            <label class="custom-control-label" for="switchcard7">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+            <!--Paciente Asociado-->
+            <div class="card col-sm-12 col-md-3">
+                <div class="card-header">Leonor Iturriaga</div>
+                    <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-muted">Embarazo</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">+569635677</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">29 años</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">30 semanas</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Crecimiento adecuado. Cesarea programada. </h6>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="switchcard8">
+                            <label class="custom-control-label" for="switchcard8">Requiere Observación</label>
+                    </div>
+
+                    <button type="button" class="btn btn-dark">Más...</button>
+                    <button type="button" class="btn btn-primary">Eliminar</button>                    
+                </div>
+            </div>
+        </div>
+        <!--Boton más-->
+        <div class="row">
+            <button type="button" class="btn btn-warning">Más...</button>
+        </div>
+    </div>
+    <!-- [FIN Container Mis Pacientes] -->
+
+    <!-- [Container Agenda] -->
+    <div class="card container" id="Agenda">
+        <div class="row">
+            <!--HOY-->
+            <div class="card col-sm-12 col-md-4">
+                <div class="card-header">HOY</div>
+                <div class="card-body">
+                    <li>
+                        VACACIONES
+                    </li>
+                </div>
+            </div>
+            <!--MES-->
+            <div class="card col-sm-12 col-md-8">
+                <div class="card-header">MES</div>
+                <!--  [CITAS MÉDICAS]  -->
+            <div class="card col-sm-12 col-md-12">
+            
+                <div class="container">
+                    <div class="row">
+                        <div class="card-header col-sm-12 col-md-12">
+                            CALENDARIO DE EXÁMENES MÉDICOS Y CITAS PROGRAMADAS                  
+                        </div>
+                        <!--CALENDARIO-->
+                        <table>
+                            <tr>
+                              <th class="day-name">DOMINGO</th>
+                              <th class="day-name">LUNES</th>
+                              <th class="day-name">MARTES</th>
+                              <th class="day-name">MIERCOLES</th>
+                              <th class="day-name">JUEVES</th>
+                              <th class="day-name">VIERNES</th>
+                              <th class="day-name">SABADO</th>
+                            </tr>
+                            <tr>
+                              <td class="day"><span class="number">30</span></td>
+                              <td class="day"><span class="number">1</span>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                </td>
+                              <td class="day"><span class="number">2</span>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                </td>
+                              <td class="day"><span class="number">3</span>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p></td>
+                              <td class="day"><span class="number">4</span>
+                            
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                              <td class="day"><span class="number">5</span></td>
+                              <td class="day"><span class="number">6</span></td>
+                            </tr>
+                            <tr>
+                              <td class="day"><span class="number">7</span></td>
+                              <td class="day"><span class="number">8</span></span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">9</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">10</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">11</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">12</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">13</span></td>
+                            </tr>
+                            <tr>
+                              <td class="day"><span class="number">14</span></td>
+                              <td class="day"><span class="number">15</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">16</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">17</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">18</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">19</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">20</span></td>
+                            </tr>
+                            <tr>
+                              <td class="day"><span class="number">21</span></td>
+                              <td class="day"><span class="number">22</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day today"><span class="number">23</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">24</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">25</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">26</span><p class="event" style="background-color:red; font-size: small;">VAC.</p></td>
+                              <td class="day"><span class="number">27</span></td>
+                            </tr>
+                            <tr>
+                              <td class="day"><span class="number">28</span><p class="event" style="background-color:cyan; font-size: small;">PARTO</p></td>
+                              <td class="day"><span class="number">29</span>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                            </td>
+                              <td class="day"><span class="number">30</span>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                            </td>
+                              <td class="day"><span class="number">1</span>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p>
+                                <p class="event" style="background-color:pink; font-size: small;">Ped</p></td>
+                              <td class="day"><span class="number">2</span>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                              <td class="day"><span class="number">3</span>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                                <p class="event" style="background-color:greenyellow; font-size: small;">G-obs</p>
+                              <td class="day"><span class="number">4</span>
+                                <p class="event" style="background-color:orange; font-size: small;"></p></td>
+                            </tr>
+                            <tr>
+                              <td class="day"><span class="number">5</span></td>
+                              <td class="day"><span class="number">6</span><p class="event" style="background-color:orange; font-size: small;"></p></td>
+                              <td class="day"><span class="number">7</span><p class="event" style="background-color:cyan; font-size: small;">PARTO</p></td>
+                              <td class="day"><span class="number">8</span><p class="event" style="background-color:orange; font-size: small;"></p></td>
+                              <td class="day"><span class="number">9</span><p class="event" style="background-color:orange; font-size: small;"></p></td>
+                              <td class="day"><span class="number">10</span><p class="event" style="background-color:orange; font-size: small;"></p></td>
+                              <td class="day"><span class="number">11</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    </div><br>
+                      
+                    <!-- FIN ROW-->
+                </div>
+            </div>
+            <!-- END INFO PERSONAL-->
+            </div>
+        </div>  
+    </div>
+    <!-- [FIN Container Agenda] -->
+
+
+
+    <!-- [FIN BODY PERFIL USUARIO] -->
+
+    </div>
+    <!-- SCRIPTS BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>

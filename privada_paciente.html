@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Citas Médicas</title>
+      <title>Ficha Paciente</title>
       <link rel="shortcut icon" href="#" />
 
       <!-- BOOTSTRAP -->
@@ -135,87 +135,103 @@
                 </div>
             </div>
             <!--FIN LATERAL-->
-
-            <!--  [CITAS MÉDICAS]  -->
-            <div class="card col-sm-12 col-md-9">
             
+            <!--  [Resumen Paciente]  -->
+            <div class="card col-sm-12 col-md-9">
                 <div class="container">
+                    <!-- Mensajes importantes -->
                     <div class="row">
-                        <div class="card-header col-sm-12 col-md-12">
-                            CALENDARIO DE EXÁMENES MÉDICOS Y CITAS PROGRAMADAS                  
+                        <div class="alert alert-danger" role="alert">
+                            <strong>Atención!</strong> Manteniendo tu información actualizada, nos ayudas a brindarte una atención oportuna.
                         </div>
-                    </div><br>
+                    </div>
+                    <!--imagen-->
                     <div class="row">
-                        <!--CALENDARIO-->
-                        <table>
-                            <tr>
-                              <th class="day-name">DOMINGO</th>
-                              <th class="day-name">LUNES</th>
-                              <th class="day-name">MARTES</th>
-                              <th class="day-name">MIERCOLES</th>
-                              <th class="day-name">JUEVES</th>
-                              <th class="day-name">VIERNES</th>
-                              <th class="day-name">SABADO</th>
-                            </tr>
-                            <tr>
-                              <td class="day"><span class="number">30</span></td>
-                              <td class="day"><span class="number">1</span>
-                                <p class="event" style="background-color:red; font-size: small;">Ex. glucosa 8:15</p>
-                                <p class="event" style="background-color:blue; font-size: small;">Med. Gral 14:30</p></td>
-                              <td class="day"><span class="number">2</span></td>
-                              <td class="day"><span class="number">3</span></td>
-                              <td class="day"><span class="number">4</span></td>
-                              <td class="day"><span class="number">5</span></td>
-                              <td class="day"><span class="number">6</span></td>
-                            </tr>
-                            <tr>
-                              <td class="day"><span class="number">7</span></td>
-                              <td class="day"><span class="number">8</span></span></td>
-                              <td class="day"><span class="number">9</span></td>
-                              <td class="day"><span class="number">10</span></td>
-                              <td class="day"><span class="number">11</span>
-                                <p class="event" style="background-color:red; font-size: small;">Ex Perfil lipídico 7:45<p></td>
-                              <td class="day"><span class="number">12</span></td>
-                              <td class="day"><span class="number">13</span></td>
-                            </tr>
-                            <tr>
-                              <td class="day"><span class="number">14</span></td>
-                              <td class="day"><span class="number">15</span></td>
-                              <td class="day"><span class="number">16</span></td>
-                              <td class="day"><span class="number">17</span></td>
-                              <td class="day"><span class="number">18</span></td>
-                              <td class="day"><span class="number">19</span></td>
-                              <td class="day"><span class="number">20</span></td>
-                            </tr>
-                            <tr>
-                              <td class="day"><span class="number">21</span></td>
-                              <td class="day"><span class="number">22</span></td>
-                              <td class="day today"><span class="number">23</span></td>
-                              <td class="day"><span class="number">24</span>
-                                <p class="event" style="background-color:blue; font-size: small;">Endocrinologo 17:30</p></td>
-                              <td class="day"><span class="number">25</span></td>
-                              <td class="day"><span class="number">26</span></td>
-                              <td class="day"><span class="number">27</span></td>
-                            </tr>
-                            <tr>
-                              <td class="day"><span class="number">28</span></td>
-                              <td class="day"><span class="number">29</span></td>
-                              <td class="day"><span class="number">30</span></td>
-                              <td class="day"><span class="number">1</span></td>
-                              <td class="day"><span class="number">2</span></td>
-                              <td class="day"><span class="number">3</span></td>
-                              <td class="day"><span class="number">4</span></td>
-                            </tr>
-                            <tr>
-                              <td class="day"><span class="number">5</span></td>
-                              <td class="day"><span class="number">6</span>
-                              <td class="day"><span class="number">7</span></td>
-                              <td class="day"><span class="number">8</span></td>
-                              <td class="day"><span class="number">9</span></td>
-                              <td class="day"><span class="number">10</span></td>
-                              <td class="day"><span class="number">11</span></td>
-                            </tr>
-                        </table>
+                        <div class="col-sm-12 col-md-3">
+                            <img src="img/foto_perfil.jpg" class="img-fluid" alt="Responsive image" style="border-radius: 100%; width: 100%;">
+                        </div>
+                        <div class="col-sm-12 col-md-9">
+                            <p style="font-size: xx-large; padding: 9%;">Bienvenida Margarita !</p>
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <!-- Antecedentes médicos [Grupo sanguineo-Enfermedades Diagnosticadas]-->
+                    <div class="row">
+                        <!--sangre-->
+                        <div class="col-sm-12 col-md-6">
+                            <h3 class="card-header"><img src="img/icono_gota.png" width="15%">Grupo sanguíneo</h3>
+                            <div class="card-body">
+                                <h3 class="card-title" style="text-align: center;"><strong>O+</strong></h3>
+                            </div>
+                        </div>
+                        <!--enfermedades diagnosticadas-->
+                        <div class="col-sm-12 col-md-6">
+                            <h4 class="card-header"><img src="img/icono_antecedentes.png" width="15%">Enfermedades declaradas</h4>
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><strong>Resistencia a la insulina</strong></h4></li>
+                                <h4 class="card-title" style="text-align: center;"><strong>Hipertensión</strong></h4></li>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Antecedentes médicos [Medicamentos-Alergias Diagnosticadas]-->
+                    <div class="row">
+                        <!--Medicamentos-->
+                        <div class="col-sm-12 col-md-6">
+                            <h3 class="card-header"><img src="img/icono_medicamentos.png" width="15%">Medicamentos</h3>
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><strong>Metformina 1000mg</strong></h4></li>
+                                <h4 class="card-title" style="text-align: center;"><strong>Enalapril 10 MG</strong></h4></li>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h4 class="card-header"><img src="img/icono_alerta.png" width="15%">Alergias Diagnosticadas</h4>
+                            <div class="card-body">
+                                <h4 class="card-title" style="text-align: center;"><strong>Alérgenos, Penicilina</strong></h4></li>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Antecedentes médicos [Contacto SOS-Dr Cabecera]-->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h4 class="card-header"><img src="img/icono_sos.png" width="15%">Contacto Emergencia</h4>
+                            <div class="card-body">
+                                <h4 class="card-title" "><strong>Carlos Espejo</strong></h4></li>
+                                <p class="card-text">Teléfono Móvil: (+569)8545 1415</p>  
+                                <p class="card-text">Teléfono Fijo: 2 25682151</p>
+                                <p class="card-text">6 Norte 925, Viña del Mar, Chile.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h4 class="card-header"><img src="img/icono_medico.png" width="15%">Dr. Cabecera</h4>
+                            <div class="card-body">
+                                <h4 class="card-title" "><strong>Carlos Espejo</strong></h4></li>
+                                <p class="card-text">Teléfono Móvil: (+569)8545 1415</p>  
+                                <p class="card-text">Teléfono Fijo: 2 25682151</p>
+                                <p class="card-text">6 Norte 925, Viña del Mar, Chile.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Antecedentes médicos [Sis Salud-Institucion recurrente]-->
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h4 class="card-header"><img src="img/icono_network.png" width="15%">Sistema de Salud</h4>
+                            <div class="card-body">
+                                <h3 class="card-title" "><strong>FONASA -A</strong></h3></li>
+                                <h3 class="card-title" "><strong>Seguro complementario</strong></h3></li>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <h4 class="card-header"><img src="img/icono_corazon.png" width="15%">Institución Recurrente</h4>
+                            <div class="card-body">
+                                <h3 class="card-title" "><strong>H. Luis Calvo Mackenna</strong></h3></li>
+                                <h3 class="card-title" "><strong>C. RedSalud</strong></h3></li>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Actualización-->
+                    <div class="row">
+                        <button type="button" class="btn btn-dark btn-lg">Actualizar información</button>
                     </div>
                     <!-- FIN ROW-->
                 </div>
@@ -247,3 +263,5 @@
   </body>
 </html>
 
+<!--chart -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
