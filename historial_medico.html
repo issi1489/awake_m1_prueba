@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Historial médico</title>
+      <link rel="shortcut icon" href="#" />
+
+      <!-- BOOTSTRAP -->
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+      >
+      <link rel="stylesheet" type="text/css" href="css/med_style.css">
+
+     
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  </head>
+
+  
+  <body>
+
+    <!-- Navigation Bar (Paciente) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Medical Services App.</a>
+  
+        <!-- Navigation Bar Hamburger-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation"
+          aria-expanded="false"
+          aria-controls="navigation" 
+          aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End Navigation Bar Hamburger -->
+  
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navigation">
+           <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link scroll-trigger" 
+                  href="index.html#compromiso">
+                    Nuestro compromiso
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#noticias">
+                    Noticias
+                </a>
+              </li>
+              <li class="nav-item">
+                <a 
+                  class="nav-link scroll-trigger" 
+                  href="index.html#proveedores">
+                    Proveedores
+                </a>
+              </li>
+
+              <!--MENU PORTAL INTERNO-->
+              <li class="nav-item dropdown">
+                <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Perfil <span class="caret"></span>
+                </a>
+                
+                <div class="dropdown-menu dropdown-menu-right">
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="privada_paciente.html">
+                        Ficha Paciente
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="citas_medicas.html">
+                        Citas Médicas
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="historial_medico.html">
+                        Historial Médico
+                    </a>
+                    <!-- -->
+                    <a 
+                      class="dropdown-item scroll-trigger"
+                      href="usuarios.html">
+                        Usuarios Autorizados
+                    </a>
+                    <!-- -->
+                    <a 
+                    class="dropdown-item scroll-trigger"
+                    href="perfil.html">
+                      Perfil
+                    </a>
+                    <!--LOGOUT-->
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item scroll-trigger" href="index.html">
+                        Logout
+                    </a>
+                </div>
+              </li>
+          </ul>
+           
+        </div>
+        <!-- Navigation Links -->
+      </nav>
+    <!-- End Navigation Bar (Paciente)-->
+    
+    <br>
+    <br>
+    
+                        
+    <!-- BODY [] -->
+    <div class="container">
+        <!-- BODY PRINCIPAL-->
+        <div class="row">
+            <!--MENÚ LATERAL-->
+            <div class="col-sm-12 col-md-3">
+                <div class="btn-group-vertical btn-dark" role="group" aria-label="Basic example" style="opacity: 0.85;">
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="privada_paciente.html">Ficha Paciente</a><!--privada_paciente.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="citas_medicas.html">Citas Médicas</a><!--citas_medicas.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="historial_medico.html">Historial Médico</a><!--historial_medico.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="usuarios.html">Usuarios Autorizados</a><!--usuarios.html--></button>
+                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="perfil.html">Perfil</a><!--perfil.html--></button>
+                </div>
+            </div>
+            <!--FIN LATERAL-->
+
+            <!--  [Historial médico]  -->
+            <div class="col-sm-12 col-md-9">
+                <br>
+                <!--Enfermedades y condiciones Diagnosticadas-->
+                <div class="container">
+                    <div class="row">
+                        
+                        <h4>ENFERMEDADES Y CONDICIONES DIAGNOSTICADAS</h4>
+                        <BR>
+                        <table name="tabla_diagnosticos">
+                           <tr>
+                               <th>Diagnóstico</th>
+                               <th>Fecha</th>
+                               <th>E° control</th>
+                               <th>Último control</th>
+                               <th>Notas</th>
+                           </tr>
+                           <!---->
+                           <tr class="table-dark">
+                               <td>Resistencia a la insulina</td>
+                               <td>17/11/2010</td>
+                               <td>ALTERADO</td>
+                               <td>10/09/2020</td>
+                               <td>Se solicitan exámenes de control</td>
+                           </tr>
+                           <!---->
+                           <tr>
+                                <td>Hipertensión</td>
+                                <td>05/12/1999</td>
+                                <td>NORMAL</td>
+                                <td>07/02/2020</td>
+                                <td>Estable</td>
+                            </tr>
+                            <!---->
+                            <tr>
+                                <td>Alergia Penicilina</td>
+                                <td>10/03/1992</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                            </tr>
+
+                       </table>
+                    </div>   
+                </div>
+
+                <!--Historial últimos exámenes-->
+                <div class="container">
+                    <div class="row">
+                        <h4>ENFERMEDADES Y CONDICIONES DIAGNOSTICADAS</h4>
+                        <BR>
+                        <table name="tabla_historial">
+                           <tr>
+                               <th>Exámen</th>
+                               <th>Fecha Solic.</th>
+                               <th>Fecha Result.</th>
+                               <th>Resultado</th>
+                               <th>Informe</th>
+                           </tr>
+                           <!---->
+                           <tr name="historial1" class="table-dark">
+                               <td>Perfil lipidico</td>
+                               <td>04/08/2020</td>
+                               <td>11/10/2020</td>
+                               <td>ALTERADO</td>
+                               <td style="text-align: center;"><a href="#myChart_lipidico"><button type="button" class="btn btn-primary">Ver</button></a></td>
+                               
+                           </tr>
+                           <!---->
+                           <tr name="historial2" class="table-dark">
+                                <td>Insulina</td>
+                                <td>04/08/2020</td>
+                                <td>01/10/2020</td>
+                                <td>ALTERADO</td>
+                                <td style="text-align: center;"><a href="#myChart_insulina"><button type="button" class="btn btn-primary">Ver</button></a></td>
+                                
+                            </tr>
+                            <!---->
+                            <tr name="historial3" class="table-dark">
+                                <td>Electro cardiograma</td>
+                                <td>04/08/2020</td>
+                                <td>11/10/2020</td>
+                                <td>ALTERADO</td>
+                                <td style="text-align: center;"><a href="#myChart_electro"><button type="button" class="btn btn-primary">Ver</button></a></td>
+                                
+                            </tr>
+                            <!---->
+                            <tr name="historial4">
+                                <td>Hemograma</td>
+                                <td>20/12/2019</td>
+                                <td>21/01/2020</td>
+                                <td>NORMAL</td>
+                                <td style="text-align: center;"><a href="#myChart_Hemograma"><button type="button" class="btn btn-info">Ver</button></a></td>
+                                
+                            </tr>
+
+                       </table>
+                    </div>
+<br>
+                    <div class="container">
+                        <div class="row">
+                            <div class="card col-sm-12 col-md-12">
+                                <p>[Historial insulina]</p>
+                                <canvas id="myChart_insulina">
+                                    var ctx = document.getElementById("myChart_insulina");
+                                </canvas>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card col-sm-12 col-md-6">
+                                <p>[Historial Glóbulos Rojos]</p>
+                                <canvas id="myChart_Hemograma1">
+                                    var ctx = document.getElementById("myChart_Hemograma");
+                                </canvas>
+                            </div>
+                            <div class="card col-sm-12 col-md-6">
+                                <p>[Historial Hemoglobina]</p>
+                                <canvas id="myChart_Hemograma2">
+                                    var ctx = document.getElementById("myChart_Hemograma2");
+                                </canvas>
+                            </div>
+                            <div class="card col-sm-12 col-md-6">
+                                <p>[Historial Hematocrito]</p>
+                                <canvas id="myChart_Hemograma3">
+                                    var ctx = document.getElementById("myChart_Hemograma3");
+                                </canvas>
+                            </div>
+                            <div class="card col-sm-12 col-md-6">
+                                <p>[Historial RDW]</p>
+                                <canvas id="myChart_Hemograma4">
+                                    var ctx = document.getElementById("myChart_Hemograma4");
+                                </canvas>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <!-- Btn histórico x periodo-->
+                
+            </div>
+            <!-- [END Historial médico]-->
+        </div>
+    </div>
+
+    <!-- FIN BODY PERFIL USUARIO -->
+
+    </div>
+    <script src="js/med_js.js"></script>
+    <!-- SCRIPTS BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>
+
