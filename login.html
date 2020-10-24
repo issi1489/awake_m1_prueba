@@ -81,46 +81,38 @@
                        
             <!-- FORMULARIO-->
             <div class="col-sm-12 col-md-6">
-                <br>
-                <br>
-                ACCEDE A TU INFORMACIÓN DESDE CUALQUIER LUGAR
-                <br>
-                <br>
-                <!-- USUARIO-->
+              <br>
+              <br>
+              ACCEDE A TU INFORMACIÓN DESDE CUALQUIER LUGAR
+              <br>
+              <br>
+              <!-- USUARIO-->
+              <form name="login">
                 <div class="row">
-                    <div class="col-12">
-                        <!-- USUARIO-->
-                        <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">Usuario</div>
-                            </div>
-                            <div type="text" class="form-control"">nombre_usuario</div>
-                        </div>
-                    </div>
+                  <div class="col-sm-12 col-md-12">
+                    <label>Usuario</label>
+                    <input name="id" type="text" class="form-control">
+                  </div>
                 </div>
-                <!-- PASSWORD -->
+                <br>
                 <div class="row">
-                    
-                    <div class="col-12">
-                        
-                        <div class="input-group mb-2 mr-sm-2">
-                            <div class="input-group-prepend">
-                                
-                                <div class="input-group-text">Password</div>
-                            </div>
-                            <div type="text" class="form-control"">*********</div>
-                        </div>
-                    </div>
+                  <div class="col-sm-12 col-md-12">
+                    <label>Contraseña</label>
+                    <input name="pass" type="password" class="form-control" placeholder="*********">
+                  </div>
                 </div>
+                <br>
                 <div class="row">
-                    <div class="col-12"> 
-                        <button type="button" class="btn btn-dark btn-md" style="padding: 1px;"><a class="nav-link userlink" href="privada_paciente.html">Login</a></button>
-                    </div>
+                  <div class="col-sm-12 col-md-12">
+                    <input type="button" class="btn btn-dark btn-md" value="Login" onClick="pasuser(this.form)">
+                  </div>
                 </div>
+              </form>
             </div>
 
             <!-- Información-->
             <div class="card col-sm-12 col-md-6">
+
                 <div class="card-header" style="text-align: center;">
                     <img src="img/adulto_mayor_phone.jpg" width="90%">
                 </div>
@@ -144,7 +136,7 @@
 
    
     <!-- Fin Body -->
-   
+    
     <br>
     <br>
     <footer class="footer bg-dark text-center">
@@ -152,6 +144,8 @@
       <p class="text-muted">Grupo 5 - Full Stack Python</p>
     </footer>
 
+
+    <script src="../webSalud/js/med_js.js"></script>
     <!-- jQuery, Popper.js, Bootstrap JS -->
     <script 
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
