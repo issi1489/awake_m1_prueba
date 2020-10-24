@@ -9,7 +9,7 @@ function pasuser(form) {
     
     else if (form.id.value=="dra.elizabeth" && form.pass.value=="4321") { 
                 
-        location="index.html" 
+        location="privada_medico.html" 
       } 
 
     else {
@@ -17,3 +17,5 @@ function pasuser(form) {
       }
   
   }
+
+/*FORMULARIO REGISTRO PACIENTE*/
