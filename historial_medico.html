@@ -1,313 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Historial médico</title>
-      <link rel="shortcut icon" href="#" />
-
-      <!-- BOOTSTRAP -->
-      <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-      >
-      <link rel="stylesheet" type="text/css" href="css/med_style.css">
-
-     
-      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-  </head>
-
-  
-  <body>
-
-    <!-- Navigation Bar (Paciente) -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="index.html">Medical Services App.</a>
-  
-        <!-- Navigation Bar Hamburger-->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navigation"
-          aria-expanded="false"
-          aria-controls="navigation" 
-          aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- End Navigation Bar Hamburger -->
-  
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navigation">
-           <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link scroll-trigger" 
-                  href="index.html#compromiso">
-                    Nuestro compromiso
-                </a>
-              </li>
-              <li class="nav-item">
-                <a 
-                  class="nav-link scroll-trigger" 
-                  href="index.html#noticias">
-                    Noticias
-                </a>
-              </li>
-              <li class="nav-item">
-                <a 
-                  class="nav-link scroll-trigger" 
-                  href="index.html#proveedores">
-                    Proveedores
-                </a>
-              </li>
-
-              <!--MENU PORTAL INTERNO-->
-              <li class="nav-item dropdown">
-                <a
-                    href="#"
-                    class="nav-link dropdown-toggle"
-                    data-toggle="dropdown"
-                    role="button"
-                    aria-haspopup="true"
-                    aria-expanded="false">
-                        Perfil <span class="caret"></span>
-                </a>
-                
-                <div class="dropdown-menu dropdown-menu-right">
-                    <!-- -->
-                    <a 
-                      class="dropdown-item scroll-trigger"
-                      href="privada_paciente.html">
-                        Ficha Paciente
-                    </a>
-                    <!-- -->
-                    <a 
-                      class="dropdown-item scroll-trigger"
-                      href="citas_medicas.html">
-                        Citas Médicas
-                    </a>
-                    <!-- -->
-                    <a 
-                      class="dropdown-item scroll-trigger"
-                      href="historial_medico.html">
-                        Historial Médico
-                    </a>
-                    <!-- -->
-                    <a 
-                      class="dropdown-item scroll-trigger"
-                      href="usuarios.html">
-                        Usuarios Autorizados
-                    </a>
-                    <!-- -->
-                    <a 
-                    class="dropdown-item scroll-trigger"
-                    href="perfil.html">
-                      Perfil
-                    </a>
-                    <!--LOGOUT-->
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item scroll-trigger" href="index.html">
-                        Logout
-                    </a>
-                </div>
-              </li>
-          </ul>
-           
+    <head>
+        <title>Paciente</title>
+        <meta charset="utf-8"/>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous">
+        <link rel='stylesheet' type='text/css'
+            href='/css/index_b.css'>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    </head>
+    <body>
+        <div class="profilepic text-info"> 
+            <h1><strong>MONITOREO EN TIEMPO REAL</strong></h1>
         </div>
-        <!-- Navigation Links -->
-      </nav>
-    <!-- End Navigation Bar (Paciente)-->
-    
-    <br>
-    <br>
-    
-                        
-    <!-- BODY [] -->
-    <div class="container">
-        <!-- BODY PRINCIPAL-->
-        <div class="row">
-            <!--MENÚ LATERAL-->
-            <div class="col-sm-12 col-md-3">
-                <div class="btn-group-vertical btn-dark" role="group" aria-label="Basic example" style="opacity: 0.85;">
-                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="privada_paciente.html">Ficha Paciente</a><!--privada_paciente.html--></button>
-                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="citas_medicas.html">Citas Médicas</a><!--citas_medicas.html--></button>
-                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="historial_medico.html">Historial Médico</a><!--historial_medico.html--></button>
-                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="usuarios.html">Usuarios Autorizados</a><!--usuarios.html--></button>
-                    <button type="button" class="btn btn-dark"><a class="navbar-brand" href="perfil.html">Perfil</a><!--perfil.html--></button>
-                </div>
-            </div>
-            <!--FIN LATERAL-->
-
-            <!--  [Historial médico]  -->
-            <div class="col-sm-12 col-md-9">
-                <br>
-                <!--Enfermedades y condiciones Diagnosticadas-->
-                <div class="container">
-                    <div class="row">
-                        
-                        <h4>ENFERMEDADES Y CONDICIONES DIAGNOSTICADAS</h4>
-                        <BR>
-                        <table name="tabla_diagnosticos">
-                           <tr>
-                               <th>Diagnóstico</th>
-                               <th>Fecha</th>
-                               <th>E° control</th>
-                               <th>Último control</th>
-                               <th>Notas</th>
-                           </tr>
-                           <!---->
-                           <tr class="table-dark">
-                               <td>Resistencia a la insulina</td>
-                               <td>17/11/2010</td>
-                               <td>ALTERADO</td>
-                               <td>10/09/2020</td>
-                               <td>Se solicitan exámenes de control</td>
-                           </tr>
-                           <!---->
-                           <tr>
-                                <td>Hipertensión</td>
-                                <td>05/12/1999</td>
-                                <td>NORMAL</td>
-                                <td>07/02/2020</td>
-                                <td>Estable</td>
-                            </tr>
-                            <!---->
-                            <tr>
-                                <td>Alergia Penicilina</td>
-                                <td>10/03/1992</td>
-                                <td>N/A</td>
-                                <td>N/A</td>
-                                <td>N/A</td>
-                            </tr>
-
-                       </table>
-                    </div>   
-                </div>
-
-                <!--Historial últimos exámenes-->
-                <div class="container">
-                    <div class="row">
-                        <h4>ENFERMEDADES Y CONDICIONES DIAGNOSTICADAS</h4>
-                        <BR>
-                        <table name="tabla_historial">
-                           <tr>
-                               <th>Exámen</th>
-                               <th>Fecha Solic.</th>
-                               <th>Fecha Result.</th>
-                               <th>Resultado</th>
-                               <th>Informe</th>
-                           </tr>
-                           <!---->
-                           <tr name="historial1" class="table-dark">
-                               <td>Perfil lipidico</td>
-                               <td>04/08/2020</td>
-                               <td>11/10/2020</td>
-                               <td>ALTERADO</td>
-                               <td style="text-align: center;"><a href="#myChart_lipidico"><button type="button" class="btn btn-primary">Ver</button></a></td>
-                               
-                           </tr>
-                           <!---->
-                           <tr name="historial2" class="table-dark">
-                                <td>Insulina</td>
-                                <td>04/08/2020</td>
-                                <td>01/10/2020</td>
-                                <td>ALTERADO</td>
-                                <td style="text-align: center;"><a href="#myChart_insulina"><button type="button" class="btn btn-primary">Ver</button></a></td>
-                                
-                            </tr>
-                            <!---->
-                            <tr name="historial3" class="table-dark">
-                                <td>Electro cardiograma</td>
-                                <td>04/08/2020</td>
-                                <td>11/10/2020</td>
-                                <td>ALTERADO</td>
-                                <td style="text-align: center;"><a href="#myChart_electro"><button type="button" class="btn btn-primary">Ver</button></a></td>
-                                
-                            </tr>
-                            <!---->
-                            <tr name="historial4">
-                                <td>Hemograma</td>
-                                <td>20/12/2019</td>
-                                <td>21/01/2020</td>
-                                <td>NORMAL</td>
-                                <td style="text-align: center;"><a href="#myChart_Hemograma"><button type="button" class="btn btn-info">Ver</button></a></td>
-                                
-                            </tr>
-
-                       </table>
-                    </div>
-<br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="card col-sm-12 col-md-12">
-                                <p>[Historial insulina]</p>
-                                <canvas id="myChart_insulina">
-                                    var ctx = document.getElementById("myChart_insulina");
-                                </canvas>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="card col-sm-12 col-md-6">
-                                <p>[Historial Glóbulos Rojos]</p>
-                                <canvas id="myChart_Hemograma1">
-                                    var ctx = document.getElementById("myChart_Hemograma");
-                                </canvas>
-                            </div>
-                            <div class="card col-sm-12 col-md-6">
-                                <p>[Historial Hemoglobina]</p>
-                                <canvas id="myChart_Hemograma2">
-                                    var ctx = document.getElementById("myChart_Hemograma2");
-                                </canvas>
-                            </div>
-                            <div class="card col-sm-12 col-md-6">
-                                <p>[Historial Hematocrito]</p>
-                                <canvas id="myChart_Hemograma3">
-                                    var ctx = document.getElementById("myChart_Hemograma3");
-                                </canvas>
-                            </div>
-                            <div class="card col-sm-12 col-md-6">
-                                <p>[Historial RDW]</p>
-                                <canvas id="myChart_Hemograma4">
-                                    var ctx = document.getElementById("myChart_Hemograma4");
-                                </canvas>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-
-                <!-- Btn histórico x periodo-->
-                
-            </div>
-            <!-- [END Historial médico]-->
+        <hr class="my-2">
+        <script></script>
+        <div class="contenedor">
+            <canvas id="glicemia" width="300" height="150"></canvas>
         </div>
-    </div>
-
-    <!-- FIN BODY PERFIL USUARIO -->
-
-    </div>
-    <script src="js/med_js.js"></script>
-    <!-- SCRIPTS BOOTSTRAP -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous">
-    </script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous">
-    </script>
-
-  </body>
-</html>
-
+        <script>
+        var ctx = document.getElementById('glicemia').getContext('2d');
+        var Glicemia = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['noviembre', 'diciembre', 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre'],
+                datasets: [{
+                    label: '# Medición de azúcar en la sangre',
+                    data: [120, 125, 150, 145, 142, 125, 100, 95, 80, 65, 65, 65],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        <div class="profilepic text-info"> 
+            <h1><strong>TUS EXÁMENES</strong></h1>
+        </div><br>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Añadir exámen</label>
+        </div>
+            <hr class="my-2">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tipo de Exámen</th>
+                    <th>Archivo</th>
+                    <th>Informante</th>
+                    <th>Fecha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><strong>Radiografía abdominal</strong></td>
+                    <td><button type="button" class="btn btn-info">Descarga</button></td>
+                    <td><p>H.Gustavo Frike, Dr.Maturana</p></td>
+                    <td><p>05/03/2020</p></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td><strong>Glicemia</strong></td>
+                    <td><button type="button" class="btn btn-info">Descarga</button></td>
+                    <td><p>H.Gustavo Frike, Dr.Robles</p></td>
+                    <td><p>02/02/2020</p></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td><strong>Presión arterial</strong></td>
+                    <td><button type="button" class="btn btn-info">Descarga</button></td>
+                    <td><p>H.Gustavo Frike, Dr.Dencil</p></td>
+                    <td><p>20/10/2019</p></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td><strong>Perfil lipídico</strong></td>
+                    <td><button type="button" class="btn btn-info">Descarga</button></td>
+                    <td><p>Cónyuge</p></td>
+                    <td><p>12/04/2018</p></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td><strong>Hemograma completo</strong></td>
+                    <td><button type="button" class="btn btn-info">Descarga</button></td>
+                    <td><p>H.Gustavo Frike, Dr.Maturana</p></td>
+                    <td><p>04/04/2018</p></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td><strong>Perfíl hepático</strong></td>
+                    <td><button type="button" class="btn btn-info">Descarga</button></td>
+                    <td><p>Hija</p></td>
+                    <td><p>02/06/2016</p></td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="my-2"><br>
+        <nav aria-label="text-xs-center">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                <a class="page-link" href="#!" tabindex="-1">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                <li class="page-item active">
+                <a class="page-link" href="#!">2 <span class="sr-only">(current)</span></a></li>
+                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="#!">4</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="#!">5</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="#!">6</a></li>
+                <li class="page-item">
+                <li class="page-item"><a class="page-link" href="#!">7</a></li>
+                <li class="page-item">
+                <a class="page-link" href="#!">Next</a></li>
+            </ul>
+        </nav>
+        </div>
+        <footer>
+            <br>
+            <p>Medical Service App. &copy; 2020</p>
+        </footer> 
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous">
+        </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous">
+        </script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous">
+        </script>
+    </body>
